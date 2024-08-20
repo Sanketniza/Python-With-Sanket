@@ -1,0 +1,4 @@
+# In this assignment we will install Python
+# 1. First we will install Python in our system by using the command "pip install python" in our command prompt or terminal or by using the command "pip install python -y" in our windows command prompt. We will then verify that Python is installed by using the command "python --version" in our command prompt or terminal or by using the command "python --version" in our windows command prompt. 
+
+
