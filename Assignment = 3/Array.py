@@ -50,7 +50,7 @@ print(a)
 print('\n')
 
 # insert
-a.insert(0, 0)
+a.insert(0, 10)
 print(a)
 print('\n')
 
