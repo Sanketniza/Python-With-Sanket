@@ -96,5 +96,3 @@ def outer_function(x):
 add_five = outer_function(5)
 print(add_five(3))  # Output: 8
 
-
-

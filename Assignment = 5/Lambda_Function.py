@@ -1,3 +1,7 @@
+#? The syntax for a lambda function in Python is:
+# lambda arguments: expression
+#^ Python lambda functions are anonymous functions, meaning they are  defined without a name
+
 # Lambda function to add two numbers
 add = lambda x, y: x + y
 print(add(3, 5))  # Output: 8
@@ -57,3 +61,11 @@ average = lambda nums: sum(nums) / len(nums)
 print(average([1, 2, 3, 4, 5]))  # Output: 3.0
 print('\n')
 print("-------------------------------------------------------")
+
+def myfunc(n):
+    return lambda a: a * n
+
+print(myfunc(2)(3))  # Output: 6
+print('\n')
+print("-------------------------------------------------------")
+ 

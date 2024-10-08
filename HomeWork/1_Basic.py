@@ -149,7 +149,7 @@ print("--------------------------------------------")
 # -> Variables that are created outside of a function (as in all of the examples in the previous pages) are known as global variables.
 
 x = "sanket"
-def name():
+def name(): 
     print(x)
 
 name()
@@ -173,3 +173,67 @@ myfunc()
 print("Python is " + x)
 print("--------------------------------------------")
 
+# function with default parameters
+
+def greeting(): 
+    print("Hello, World!")
+    
+greeting()  # Output: Hello, World!
+print('\n')
+print("-------------------------------------------------------")
+
+def greeting(name="World"):
+    print(f"Hello, {name}!")
+
+greeting()  # Output: Hello, World!
+print('\n')
+print("-------------------------------------------------------")
+
+def greeting(name, age=30):
+    print(f"Hello, {name}! You are {age} years old.")
+
+greeting("Alice")  # Output: Hello, Alice! You are 30 years old.
+print('\n')
+print("-------------------------------------------------------")
+
+def greeting(name, age=30, city="New York"):
+    print(f"Hello, {name}! You are {age} years old and from {city}.")
+
+greeting("Bob", age=25)  # Output: Hello, Bob! You are 25 years old and from New York.
+print('\n')
+print("-------------------------------------------------------")
+
+# function with variable-length arguments
+
+def sum_all(*args):
+    return sum(args)
+
+print(sum_all(1, 2, 3, 4, 5))  # Output: 15
+print('\n')
+print("-------------------------------------------------------")
+
+def print_info(name, age, **kwargs):
+    print(f"Name: {name}, Age: {age}")
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+print_info(name="Bob", age=30, city="New York", country="USA")
+# Output:
+# Name: Bob, Age: 30
+# city: New York
+# country: USA
+print('\n')
+print("-------------------------------------------------------")
+
+# function with a generator
+
+def count_up_to(n):
+    i = 1
+    while i <= n:
+        yield i
+        i += 1
+
+for number in count_up_to(5):
+    print(number)  # Output: 1 2 3 4 5
+    print('\n')
+print("-------------------------------------------------------")

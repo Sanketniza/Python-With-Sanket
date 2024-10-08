@@ -134,3 +134,38 @@ print(txt)
 txt = txt.replace("life", "love", 2)  # -> Replace the second occurrence of a Character
 print(txt)
 print("------------------------------------------")
+
+
+""" 
+    *     List
+    ? Creation: my_list = [1, 2, 3]
+    ? Accessing elements: my_list[0] (returns 1)
+    ? Appending elements: my_list.append(4)
+    ? Removing elements: my_list.remove(2)
+    ? Slicing: my_list[1:3] (returns [2, 3])
+    ? Sorting: my_list.sort()
+
+    * Tuple
+    ? Creation: my_tuple = (1, 2, 3)
+    ? Accessing elements: my_tuple[0] (returns 1)
+    ? Slicing: my_tuple[1:3] (returns (2, 3))
+    ? Count occurrences: my_tuple.count(1) (returns 1)
+    ? Finding index: my_tuple.index(2) (returns 1)
+
+    * Set
+    ? Creation: my_set = {1, 2, 3}
+    ? Adding elements: my_set.add(4)
+    ? Removing elements: my_set.remove(2)
+    ? Union: my_set.union({5, 6})
+    ? Intersection: my_set.intersection({1, 2, 5})
+    ? Difference: my_set.difference({1, 2})
+
+    * Dictionary
+    ? Creation: my_dict = {'a': 1, 'b': 2}
+    ? Accessing values: my_dict['a'] (returns 1)
+    ? Adding key-value pairs: my_dict['c'] = 3
+    ? Removing key-value pairs: del my_dict['b']
+    ? Keys and values: my_dict.keys() and my_dict.values()
+    ? Iterating: for key, value in my_dict.items():
+    
+ """
