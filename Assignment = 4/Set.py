@@ -24,7 +24,7 @@ print('\n')
 s.add(11)
 print(s)
 print('\n')
-
+ 
 # copy
 s.copy()
 print(s)
@@ -76,10 +76,7 @@ print(s)
 print('\n')
 
 
-# remove
-s.remove(1)
-print(s)
-print('\n')
+
 
 # clear
 s.clear()
